@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "rabbit",
+      "type": "az.azercellfintech.emailservice.config.RabbitMQConfig",
+      "sourceType": "az.azercellfintech.emailservice.config.RabbitMQConfig"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

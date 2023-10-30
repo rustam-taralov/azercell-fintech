@@ -1,0 +1,31 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: "email-service"
+  rabbitmq:
+    listener:
+      simple:
+        retry:
+          enabled: true
+          initial-interval: 3s
+          max-attempts: 5
+          max-interval: 10
+          multiplier: 2
+
+rabbit:
+  queue: MAIL_QUEUE
+  key: ${rabbit.queue}_KEY
+  exchange: ${rabbit.queue}_EXCHANGE
+  dlq: MAIL_DLQ
+  dlq-key: ${rabbit.dlq}_KEY
+  dlq-exchange: ${rabbit.dlq}_EXCHANGE
+
+mail:
+  host: smtp.gmail.com
+  port: 587
+  username: your-email
+  password: your-email-password
+
+server:
+  port: 8085

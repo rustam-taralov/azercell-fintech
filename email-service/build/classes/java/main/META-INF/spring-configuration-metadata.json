@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "rabbit",
+      "type": "az.azercellfintech.emailservice.config.RabbitMQConfig",
+      "sourceType": "az.azercellfintech.emailservice.config.RabbitMQConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "rabbit.dlq",
+      "type": "java.lang.String",
+      "sourceType": "az.azercellfintech.emailservice.config.RabbitMQConfig"
+    },
+    {
+      "name": "rabbit.dlq-exchange",
+      "type": "java.lang.String",
+      "sourceType": "az.azercellfintech.emailservice.config.RabbitMQConfig"
+    },
+    {
+      "name": "rabbit.dlq-key",
+      "type": "java.lang.String",
+      "sourceType": "az.azercellfintech.emailservice.config.RabbitMQConfig"
+    },
+    {
+      "name": "rabbit.exchange",
+      "type": "java.lang.String",
+      "sourceType": "az.azercellfintech.emailservice.config.RabbitMQConfig"
+    },
+    {
+      "name": "rabbit.key",
+      "type": "java.lang.String",
+      "sourceType": "az.azercellfintech.emailservice.config.RabbitMQConfig"
+    },
+    {
+      "name": "rabbit.queue",
+      "type": "java.lang.String",
+      "sourceType": "az.azercellfintech.emailservice.config.RabbitMQConfig"
+    }
+  ],
+  "hints": []
+}

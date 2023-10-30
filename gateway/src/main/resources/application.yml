@@ -1,0 +1,24 @@
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: AUTH-MS
+          uri: lb://AUTH-MS
+          predicates:
+            - Path=/auth-ms/**
+        - id: CUSTOMER-MS
+          uri: lb://CUSTOMER-MS
+          predicates:
+            - Path=/customer-ms/**
+        - id: PAYMENT-MS
+          uri: lb://PAYMENT-MS
+          predicates:
+            - Path=/payment-ms/**

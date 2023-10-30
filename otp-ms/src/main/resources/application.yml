@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: otp-ms
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        retry:
+          enabled: true
+          initial-interval: 10s
+          max-attempts: 5
+          max-interval: 15s
+          multiplier: 1
+        missing-queues-fatal: false
+
+redis:
+  url: redis://localhost:6379
+
+server:
+  servlet:
+    context-path: /otp-ms
+  port: 8079
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+rabbit:
+  consumer:
+    queue: OTP_QUEUE
+    key: ${rabbit.queue.producer.queue}_KEY
+    exchange: ${rabbit.queue.producer.queue}_EXCHANGE
+    dlq: MAIL_DLQ
+    dlq-key: ${rabbit.queue.producer.dlq}_KEY
+    dlq-exchange: ${rabbit.queue.producer.dlq}_EXCHANGE
+  producer: MAIL_QUEUE
+

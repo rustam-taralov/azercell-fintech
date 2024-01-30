@@ -1,0 +1,21 @@
+url:
+  customer: localhost:8081/v1/customer
+
+jwt:
+  secret: SECRET
+  access-token-time: 150
+  refresh-token-time: 15
+
+server:
+  servlet:
+    context-path: /auth-ms
+  port: 8084
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: auth-ms

@@ -1,0 +1,88 @@
+spring:
+  application:
+    name: payment-ms
+  datasource:
+    url: ${POSTGRES_DB_JDBC_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${POSTGRES_DB_USERNAME:postgres}
+    password: ${POSTGRES_DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        retry:
+          enabled: true
+          initial-interval: 10s
+          max-attempts: 5
+          max-interval: 15s
+          multiplier: 1
+        missing-queues-fatal: false
+
+server:
+  servlet:
+    context-path: /payment-ms
+  port: 8086
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+rabbit:
+  consumer:
+    top-up-rejection:
+      queue: TOP_UP_REJECTION
+      key: ${rabbit.consumer.top-up-rejection.queue}_KEY
+      exchange: ${rabbit.consumer.top-up-rejection.queue}_EXCHANGE
+      dlq: TOP_UP_REJECTION_DLQ
+      dlq-key: ${rabbit.consumer.top-up-rejection.dlq}_KEY
+      dlq-exchange: ${rabbit.consumer.top-up-rejection.dlq}_EXCHANGE
+    purchase-rejection:
+      queue: PURCHASE_REJECTION
+      key: ${rabbit.consumer.purchase-rejection.queue}_KEY
+      exchange: ${rabbit.consumer.purchase-rejection.queue}_EXCHANGE
+      dlq: PURCHASE_REJECTION_DLQ
+      dlq-key: ${rabbit.consumer.purchase-rejection.dlq}_KEY
+      dlq-exchange: ${rabbit.consumer.purchase-rejection.dlq}_EXCHANGE
+    refund-rejection:
+      queue: REFUND_REJECTION
+      key: ${rabbit.consumer.refund-rejection.queue}_KEY
+      exchange: ${rabbit.consumer.refund-rejection.queue}_EXCHANGE
+      dlq: REFUND_REJECTION_DLQ
+      dlq-key: ${rabbit.consumer.refund-rejection.dlq}_KEY
+      dlq-exchange: ${rabbit.consumer.refund-rejection.dlq}_EXCHANGE
+    top-up-success:
+      queue: TOP_UP_SUCCESS
+      key: ${rabbit.consumer.top-up-success.queue}_KEY
+      exchange: ${rabbit.consumer.top-up-success.queue}_EXCHANGE
+      dlq: TOP_UP_SUCCESS_DLQ
+      dlq-key: ${rabbit.consumer.top-up-success.dlq}_KEY
+      dlq-exchange: ${rabbit.consumer.top-up-success.dlq}_EXCHANGE
+    purchase-success:
+      queue: PURCHASE_SUCCESS
+      key: ${rabbit.consumer.purchase-success.queue}_KEY
+      exchange: ${rabbit.consumer.purchase-success.queue}_EXCHANGE
+      dlq: PURCHASE_SUCCESS_DLQ
+      dlq-key: ${rabbit.consumer.purchase-success.dlq}_KEY
+      dlq-exchange: ${rabbit.consumer.purchase-success.dlq}_EXCHANGE
+    refund-success:
+      queue: REFUND_SUCCESS
+      key: ${rabbit.consumer.refund-success.queue}_KEY
+      exchange: ${rabbit.consumer.refund-success.queue}_EXCHANGE
+      dlq: REFUND_SUCCESS_DLQ
+      dlq-key: ${rabbit.consumer.refund-success.dlq}_KEY
+      dlq-exchange: ${rabbit.consumer.refund-success.dlq}_EXCHANGE
+  producer:
+    top-up: TOP_UP_QUEUE
+    purchase: PURCHASE_QUEUE
+    refund: REFUND_QUEUE
+
+
+

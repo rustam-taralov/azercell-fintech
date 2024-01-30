@@ -1,0 +1,70 @@
+spring:
+  application:
+    name: customer-ms
+  datasource:
+    url: ${POSTGRES_DB_JDBC_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${POSTGRES_DB_USERNAME:postgres}
+    password: ${POSTGRES_DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        retry:
+          enabled: true
+          initial-interval: 10s
+          max-attempts: 5
+          max-interval: 15s
+          multiplier: 1
+        missing-queues-fatal: false
+
+server:
+  servlet:
+    context-path: /customer-ms
+  port: 8082
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+rabbit:
+  consumer:
+    top-up:
+      queue: TOP_UP_QUEUE
+      key: ${rabbit.consumer.top-up.queue}_KEY
+      exchange: ${rabbit.consumer.top-up.queue}_EXCHANGE
+      dlq: TOP_UP_DLQ
+      dlq-key: ${rabbit.consumer.top-up.dlq}_KEY
+      dlq-exchange: ${rabbit.consumer.top-up.dlq}_EXCHANGE
+    purchase:
+      queue: PURCHASE_QUEUE
+      key: ${rabbit.consumer.purchase.queue}_KEY
+      exchange: ${rabbit.consumer.purchase.queue}_EXCHANGE
+      dlq: PURCHASE_DLQ
+      dlq-key: ${rabbit.consumer.purchase.dlq}_KEY
+      dlq-exchange: ${rabbit.consumer.purchase.dlq}_EXCHANGE
+    refund:
+      queue: REFUND_QUEUE
+      key: ${rabbit.consumer.refund.queue}_KEY
+      exchange: ${rabbit.consumer.refund.queue}_EXCHANGE
+      dlq: REFUND_DLQ
+      dlq-key: ${rabbit.consumer.refund.dlq}_KEY
+      dlq-exchange: ${rabbit.consumer.refund.dlq}_EXCHANGE
+  producer:
+    top-up-rejection: TOP_UP_REJECTION
+    top-up-success: TOP_UP_SUCCESS
+    purchase-rejection: PURCHASE_REJECTION
+    purchase-success: PURCHASE_SUCCESS
+    refund-rejection: REFUND_REJECTION
+    refund-success: REFUND_SUCCESS
+
+
+

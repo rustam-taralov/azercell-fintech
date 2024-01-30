@@ -1,0 +1,67 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version "$springBootVersion"
+	id 'io.spring.dependency-management' version "$dependencyManagmentVersion"
+	id 'groovy'
+}
+
+group = 'az.azercell-fintech'
+version = '0.0.1'
+
+java {
+	sourceCompatibility = '17'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	//spring
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-amqp'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+
+	//redisson
+	implementation group: 'org.redisson', name: 'redisson', version: "$redissonVersion"
+
+	//postgres
+	runtimeOnly 'org.postgresql:postgresql'
+
+	//swagger
+	implementation "org.springdoc:springdoc-openapi-ui:$openApiVersion"
+
+	//lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	//mapstruct
+	implementation "org.mapstruct:mapstruct:${mapStruct}"
+	annotationProcessor "org.mapstruct:mapstruct-processor:${mapStruct}"
+
+	//testing
+	implementation group: 'org.apache.groovy', name: 'groovy', version: "$groovyVersion"
+	testImplementation group: 'org.spockframework', name: 'spock-spring', version: "$spockSpringVersion"
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation "io.github.benas:random-beans:$randomBeansVersion"
+
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

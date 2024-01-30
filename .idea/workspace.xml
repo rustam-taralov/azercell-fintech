@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc9362df-59b2-4354-91de-adc2f07b9a12" name="Changes" comment="feature: implement azercell fintech task" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/auth-ms">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/customer-ms">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/email-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/gateway">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/otp-ms">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/payment">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/service-discovery">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/gateway">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gateway" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gateway" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gateway" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="rustam-taralov &lt;taralovrustem33@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "contexts": [
+    {
+      "name": "arn:aws:eks:eu-central-1:277388017452:cluster/aws-k8s-dev"
+    }
+  ],
+  "isMigrated": true
+}]]></component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="arn:aws:eks:eu-central-1:277388017452:cluster/aws-k8s-dev" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2bffQCE9Fp0KOw64btmcZ3BFgTL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Build auth-ms.executor": "Run",
+    "Gradle.Build customer-ms.executor": "Run",
+    "Gradle.Build email-service.executor": "Run",
+    "Gradle.Build gateway.executor": "Run",
+    "Gradle.Build otp-ms.executor": "Run",
+    "Gradle.Build payment.executor": "Run",
+    "Gradle.Build service-discovery.executor": "Run",
+    "Gradle.gateway [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.AuthMsApplication.executor": "Debug",
+    "Spring Boot.CustomerMsApplication.executor": "Debug",
+    "Spring Boot.EmailServiceApplication.executor": "Debug",
+    "Spring Boot.GatewayApplication.executor": "Debug",
+    "Spring Boot.OtpMsApplication.executor": "Debug",
+    "Spring Boot.PaymentApplication.executor": "Debug",
+    "Spring Boot.ServiceDiscoveryApplication.executor": "Debug",
+    "git-widget-placeholder": "Rebasing main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/taralovre/Work Space/Private/azercell-fintech",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "redis"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="az.azercellfintech.payment.service" />
+      <recent name="az.azercellfintech.payment.configuration" />
+      <recent name="az.azercellfintech.payment.queue.consumer" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PaymentApplication">
+    <configuration name="gateway [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gateway" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthMsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="auth-ms.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="az.azercellfintech.auth.ms.AuthMsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.azercellfintech.auth.ms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="az.azercellfintech.gateway.GatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.azercellfintech.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OtpMsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="otp-ms.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="az.azercellfintech.otp.ms.OtpMsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.azercellfintech.otp.ms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="payment.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="az.azercellfintech.payment.PaymentApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.azercellfintech.payment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PaymentApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.AuthMsApplication" />
+        <item itemvalue="Gradle.gateway [clean]" />
+        <item itemvalue="Spring Boot.OtpMsApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc9362df-59b2-4354-91de-adc2f07b9a12" name="Changes" comment="" />
+      <created>1706611035624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706611035624</updated>
+      <workItem from="1706611036696" duration="19570000" />
+    </task>
+    <task id="LOCAL-00001" summary="feature: implement azercell fintech task">
+      <option name="closed" value="true" />
+      <created>1706633780766</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706633780766</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feature: implement azercell fintech task">
+      <option name="closed" value="true" />
+      <created>1706633941259</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706633941259</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feature: implement azercell fintech task" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: implement azercell fintech task" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/email-service/src/main/java/az/azercellfintech/emailservice/queue/MailListener.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/customer-ms/src/main/java/az/azercellfintech/customer/ms/service/CustomerService.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/payment/src/main/java/az/azercellfintech/payment/controller/TopUpController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/payment/src/main/java/az/azercellfintech/payment/controller/PurchaseController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/payment/src/main/java/az/azercellfintech/payment/service/PurchaseService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/customer-ms/src/main/java/az/azercellfintech/customer/ms/queue/consumer/PurchaseTransactionConsumer.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/payment/src/main/java/az/azercellfintech/payment/queue/consumer/PurchaseTransactionConsumer.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/payment/src/main/java/az/azercellfintech/payment/queue/consumer/PurchaseTransactionConsumer.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/customer-ms/src/main/java/az/azercellfintech/customer/ms/service/CustomerService.java</url>
+          <line>173</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
